@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Cadastro do Aluno</h1>
+        </div>
+    </header>
+    <div class="conteudo">
+        <nav>
+            <a href="#" class="atual nav-texto">Cadastro</a>
+            <a href="./listaCadastros.php" class="outros nav-texto">Ver todos os cadastros</a>
+        </nav>
+        <div id="cadastro-main">
+            <div id="form-cadastro">
+                <h2>Informe os dados para cadastro:</h2>
+                <form id="form" action="./script.php" method="post">
+                    <!-- nome, RA, sexo, idade, endereço, telefone e email -->
+                    <input type="text" class="input-text" name="nome" id="nome" placeholder="Nome" required> 
+                    <input type="text" class="input-text" name="ra" id="ra" placeholder="RA" required>
+                    <div>
+                        <p id="genero">Informe seu genêro:</p>
+                        <div class="sex">
+                            <input type="radio" name="sexo" value="Feminino" checked> <p>Feminino</p>
+                            <input type="radio" name="sexo" value="Masculino"> <p>Masculino</p>
+                            <input type="radio" name="sexo" value="PrefiroNaoDizer"> <p>Prefiro Não Dizer</p>
+                        </div>
+                    </div>
+                    <input type="text" class="input-text" name="idade" id="idade" placeholder="Idade" required>
+                    <input type="text" class="input-text" name="endereco" id="endereco" placeholder="Endereço" required>
+                    <input type="text" class="input-text" name="telefone" id="telefone" placeholder="telefone" required>
+                    <input type="text" class="input-text" name="email" id="email" placeholder="Email" required>
+                    <div class="botao-div">
+                        <input type="submit" class="botao" value="Cadastrar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
